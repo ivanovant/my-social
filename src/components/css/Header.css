@@ -1,4 +1,35 @@
 .header {
-    width: 100%;
+    background-color: #5D5D5D;
+    padding: 13px 0;
+}
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo img {
+    width: 100px;
+}
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    width: 200px;
+    max-width: 150px;
+}
+.link img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.name {
+    max-width: 80px;
 }

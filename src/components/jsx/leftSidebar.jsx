@@ -2,20 +2,19 @@ import React from 'react'
 
 const Sidebar = () => {
     return (
-        <section className="sidebar-left">
-            <div className="container">
-                <nav>
-                    <ul className="nav-links">
-                        <li className="nav-links-item"><a href="#" className="nav-link">Известия</a></li>
-                        <li className="nav-links-item"><a href="#" className="nav-link">Товарищи</a></li>
-                        <li className="nav-links-item"><a href="#" className="nav-link">Фотокарточки</a></li>
-                        <li className="nav-links-item"><a href="#" className="nav-link">Симфонии</a></li>
-                        <li className="nav-links-item"><a href="#" className="nav-link">Видеопленки</a></li>
-                        <li className="nav-links-item"><a href="#" className="nav-link">Товарищества</a></li>
+        <section className="sidebar">
+                <nav className="nav">
+                    <ul className="links">
+                        <li className="item"><a href="#" className="link">Известия</a></li>
+                        <li className="item"><a href="#" className="link">Товарищи</a></li>
+                        <li className="item"><a href="#" className="link">Фотокарточки</a></li>
+                        <li className="item"><a href="#" className="link">Симфонии</a></li>
+                        <li className="item"><a href="#" className="link">Видеопленки</a></li>
+                        <li className="item"><a href="#" className="link">Товарищества</a></li>
                     </ul>
                 </nav>
-            </div>
-            {/* /.container */}
         </section>
         )
 }
+
+export default Sidebar;

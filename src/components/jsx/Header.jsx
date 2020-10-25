@@ -1,32 +1,32 @@
 import React from 'react';
+import logo from './../images/logo-bw.svg'
+import avatar from './../images/user.jpeg'
+
 
 const Header = () => {
     return (
         <header className="header">
             <div className="container">
-                <div className="header-wrapper">
-                    <div className="header-logo">
-                        <img src="./../images/logo-bw.svg" alt="My Social" className="header-logo__icon"/>
-                    </div>
-                    {/* /.header-logo */}
-                    <form action="#" className="header-search">
-                        <input type="text" className="input header-search__input"/>
-                        <button className="button search-button">Найти</button>
-                    </form>
-                    <div className="header-user">
-                        <a href="#" className="user-link">
-                            <img src="./../images/user.jpeg" alt="avatar" className="user-avatar"/>
-                            <span className="user-name">Антон Иванов</span>
-                        </a>
-                    </div>
-                    {/* /.header-user */}
-                    <div className="header-notifications">
-                        <button className="button notifications-button">Уведомления</button>
-                        <div className="notification-message"></div>
-                    </div>
-                    {/* /.header-notifications */}
+                <a href="#"  className="logo">
+                    <img src={logo} alt={"logo"}/>
+                </a>
+                {/* /.logo */}
+                <form action="#" className="search">
+                    <input type="text" className="input"/>
+                    <button className="button">Найти</button>
+                </form>
+                <div className="notifications">
+                    <button className="button">Уведомления</button>
+                    <div className="message"></div>
                 </div>
-                {/* /.header */}
+                {/* /.notifications */}
+                <div className="user">
+                    <a href="#" className="link">
+                        <img src={avatar} alt="avatar"/>
+                        <span className="name">Антон Иванов</span>
+                    </a>
+                </div>
+                {/* /.user */}
             </div>
             {/* /.container */}
         </header>
